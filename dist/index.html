@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT PAGE</title>
+    <style>
+        .divFirst{
+            background-color: aquamarine;
+            padding: 15px;
+            margin-bottom: 5%;
+        }
+        .divCenter{
+            display: flex;
+        }
+        img {
+         width: 400px;
+         height: 300px;
+
+        }
+        </style>
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <div id="content"></div>
+<script>
+
+    const getdiv = document.getElementById('content');
+
+    const div1 = document.createElement('div');
+    div1.classList.add('divFirst');
+    getdiv.appendChild(div1);
+    const h2 = document.createElement('h2');
+    h2.innerHTML = 'Los Pollos Hermanos';
+    div1.appendChild(h2);
+
+    const div2 = document.createElement('div');
+    div2.classList.add('divCenter');
+    getdiv.appendChild(div2);
+    const divcontent = document.createElement('div');
+    div2.appendChild(divcontent);
+    const p1 = document.createElement('p')
+    p1.innerHTML = 'Welcome To Los Pollos Hermanos';
+    divcontent.appendChild(p1);
+    const p2 = document.createElement('p')
+    p2.innerHTML = `${"The finest ingredients are brought together with love and care, then slow cooked to perfection. Yes, the old ways are still best at Los Pollos Hermanos. But don't take my word for it. One taste, and you'll know."}`;
+    divcontent.appendChild(p2);
+    
+    const img = document.createElement('img');
+    div2.appendChild(img);
+    const getimg = document.querySelector('img').src = 'Breaking-Bad.jpg';
+</script>
+
+</body>
+</html>
