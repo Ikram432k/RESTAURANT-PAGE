@@ -1,1 +1,3 @@
- console.log('goooooooooooat');
+import initailiZeWebsite from './website';
+
+initailiZeWebsite();
